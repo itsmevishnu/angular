@@ -1,0 +1,26 @@
+<div *ngIf="isTrue;then successTemplate else dangerTemplate"></div>
+<ng-template #successTemplate>
+  <div class="alert alert-dismissible alert-success">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Good morning!</strong>
+    The value of isTrue is {{isTrue}}
+  </div>
+</ng-template>
+<ng-template #dangerTemplate>
+  <div class="alert alert-dismissible alert-danger">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Sorry!</strong>
+    The value of isTrue is {{isTrue}}
+  </div>
+</ng-template>
+<div class="card text-white bg-primary mb-3">
+  <div class="card-header">{{obj.title}}</div>
+  <div class="card-body">
+    <p class="card-text">{{obj.description}}</p>
+  </div>
+</div>
+<div class="list-group">
+  <a *ngFor="let value of array; let i = index" class="list-group-item list-group-item-action">
+    {{value}}
+  </a>
+</div>

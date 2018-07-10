@@ -1,0 +1,19 @@
+<h2>Form</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+  <div class="form-group">
+  <input type="email" class="form-control" id="fname" name="fname" placeholder="First Name" formControlName="firstname">
+</div>
+<div class="form-group">
+  <input type="email" class="form-control" id="lname" name="lname" placeholder="Last Name" formControlName="lastname">
+</div>
+<div class="form-group">
+  <select class="form-control" name="language" id="languages" placeholder="Select Language" formControlName="language">
+    <option value="english">English</option>
+    <option value="malayalam">Malayalam</option>
+    <option value="hindi">Hindi</option>
+    <option value="tamil">Tamil</option>
+    <option value="kannada">Kannada</option>
+  </select>
+</div>
+<button type="submit" [disabled]="!form.valid" name='submit' class="btn btn-primary">Submit</button>
+</form>

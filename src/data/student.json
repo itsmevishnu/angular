@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "name": "Vishnu Jayan",
+        "college": "VKCET"
+    },
+    {
+        "id": 2,
+        "name": "Vivak Kumar",
+        "college": "CEA"
+    },
+    {
+        "id": 3,
+        "name": "Amsha",
+        "college": "CET"
+    },
+    {
+        "id": 4,
+        "name": "Jibin",
+        "college": "CEK"
+    },
+    {
+        "id": 5,
+        "name": "Preethi",
+        "college": "Carmal"
+    }
+]
